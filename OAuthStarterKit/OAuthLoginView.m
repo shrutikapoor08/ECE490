@@ -207,9 +207,10 @@
         self.accessToken = [[OAToken alloc] initWithHTTPResponseBody:responseBody];
     }
     // Notify parent and close this view
-    [[NSNotificationCenter defaultCenter] 
-     postNotificationName:@"loginViewDidFinish"        
-     object:self];
+   [[NSNotificationCenter defaultCenter]
+postNotificationName:@"loginViewDidFinish"
+    object:self];
+    
     
     [self dismissModalViewControllerAnimated:YES];
     [responseBody release];

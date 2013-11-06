@@ -44,29 +44,32 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
+  
+    
+    if(LOGIN_VIEW_DID_FINISH) { NSLog(@"Loggedin");}
     
 }
 
 
--(void) loginViewDidFinish:(NSNotification*)notification
+-(BOOL) loginViewDidFinish:(NSNotification*)notification
 {
-	[[NSNotificationCenter defaultCenter] removeObserver:self];
+  
+//[self performSegueWithIdentifier:@"afterLoginScreen" sender:self];
     
+    return YES;
+    //[self windowFromStoryboard:@"AfterLogin" onScreen:self];
     
-  //  UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-   // StoryViewController *storyViewController = [storyboard instantiateInitialViewController];
-   // [self presentViewController:storyViewController animated:YES completion:nil];
+  //  [self performSegueWithIdentifier: @"mainApp" sender: self];
     // We're going to do these calls serially just for easy code reading.
     // They can be done asynchronously
     // Get the profile, then the network updates
     
-   [self performSegueWithIdentifier:@"mainApp" sender:self];
+  // [self performSegueWithIdentifier:@"mainApp" sender:self];
     //  [self dismissModalViewControllerAnimated:YES];
-    //   UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    //   UIViewController* myStoryBoardInitialViewController = [storyboard instantiateInitialViewController];
+      // UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"" bundle:nil];
+  //  StoryViewController* myStoryBoardInitialViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"StoryViewController"];
     
-    //   [self.navigationController pushViewController:myStoryBoardInitialViewController animated:YES];
+    //  [self.navigationController pushViewController:myStoryBoardInitialViewController animated:YES];
     // [self profileApiCall];
     // UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
     //  ProfileTabView * yourView = (ProfileTabView *)[storyboard instantiateViewControllerWithIdentifier:@"nuggID"];
@@ -74,6 +77,8 @@
 	
     //[self switchToStoryBoard];
 }
+
+
 
 
 

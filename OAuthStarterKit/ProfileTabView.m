@@ -38,9 +38,9 @@
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
   
     
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    StoryViewController *storyViewController = [storyboard instantiateInitialViewController];
-    [self presentViewController:storyViewController animated:YES completion:nil];
+   // UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+   // StoryViewController *storyViewController = [storyboard instantiateInitialViewController];
+    //[self presentViewController:storyViewController animated:YES completion:nil];
     // We're going to do these calls serially just for easy code reading.
     // They can be done asynchronously
     // Get the profile, then the network updates
@@ -56,7 +56,7 @@
   //  ProfileTabView * yourView = (ProfileTabView *)[storyboard instantiateViewControllerWithIdentifier:@"nuggID"];
  //   [self.presentedViewController:yourView animated:YES completion:^{}];
 	
-    //[self switchToStoryBoard];
+    [self switchToStoryBoard];
 }
 
 - (void) switchToStoryBoard
@@ -64,9 +64,9 @@
    // mainViewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
    // [mainViewController retain];
     
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    StoryViewController *storyViewController = [storyboard instantiateInitialViewController];
-   [self presentViewController:storyViewController animated:YES completion:nil];
+//    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"AfterLogin" bundle:nil];
+//    StoryViewController *storyViewController = [storyboard instantiateInitialViewController];
+//   [self presentViewController:storyViewController animated:YES completion:nil];
     
     //[self performSegueWithIdentifier:@"oauthview" sender:self];
 

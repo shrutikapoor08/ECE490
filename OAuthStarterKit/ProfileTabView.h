@@ -14,8 +14,8 @@
 #import "OAMutableURLRequest.h"
 #import "OADataFetcher.h"
 #import "OATokenManager.h"
-#import "StoryViewController.h"
-#import "SecondViewController.h"
+//#import "StoryViewController.h"
+//#import "SecondViewController.h"
 
 @interface ProfileTabView : UIViewController 
 {

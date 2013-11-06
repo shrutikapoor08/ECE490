@@ -13,12 +13,11 @@
 #import "OAMutableURLRequest.h"
 #import "OADataFetcher.h"
 #import "OATokenManager.h"
-#import "ProfileTabView.h"
 #import "StoryViewController.h"
 
 @interface ViewController : UIViewController
 
 -(IBAction)loginButton:(id)sender;
 
-@property (nonatomic, retain) ProfileTabView *profileTabView;
+//@property (nonatomic, retain) ProfileTabView *profileTabView;
 @end

@@ -12,11 +12,9 @@
 		659410A61353A25700826837 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659410A51353A25700826837 /* CoreGraphics.framework */; };
 		659410AC1353A25700826837 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659410AA1353A25700826837 /* InfoPlist.strings */; };
 		659410AF1353A25700826837 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410AE1353A25700826837 /* main.m */; };
-		659410B21353A25700826837 /* OAuthStarterKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410B11353A25700826837 /* OAuthStarterKitAppDelegate.m */; };
 		659410B51353A25700826837 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659410B31353A25700826837 /* MainWindow.xib */; };
 		659410BC1353A29200826837 /* READ_ME.txt in Resources */ = {isa = PBXBuildFile; fileRef = 659410BB1353A29200826837 /* READ_ME.txt */; };
 		659410C01353A36600826837 /* ProfileTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659410BD1353A36600826837 /* ProfileTabView.xib */; };
-		659410C11353A36600826837 /* ProfileTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410BE1353A36600826837 /* ProfileTabView.m */; };
 		659410E41353A39900826837 /* OAuthLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659410C21353A39900826837 /* OAuthLoginView.xib */; };
 		659410E51353A39900826837 /* OAuthLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410C31353A39900826837 /* OAuthLoginView.m */; };
 		659410E61353A39900826837 /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410C61353A39900826837 /* OATokenManager.m */; };
@@ -43,13 +41,20 @@
 		659411171353AE6800826837 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 659411141353AE6800826837 /* Icon-72.png */; };
 		659411181353AE6800826837 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 659411151353AE6800826837 /* Icon.png */; };
 		659411191353AE6800826837 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 659411161353AE6800826837 /* Icon@2x.png */; };
+		9D30FF971829A38A006EB8D3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D30FF961829A38A006EB8D3 /* MainViewController.m */; };
 		9D951F6B1817C0200010C060 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D951F6A1817C0200010C060 /* Storyboard.storyboard */; };
 		9D951F6D1817C28E0010C060 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D951F6C1817C28E0010C060 /* Default-568h@2x.png */; };
 		9D951F721817C3430010C060 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D951F6F1817C3430010C060 /* AppDelegate.m */; };
 		9D951F731817C3430010C060 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D951F711817C3430010C060 /* ViewController.m */; };
 		9DCF6E7118224DAD008FD568 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF6E6F18224DAD008FD568 /* StoryViewController.m */; };
 		9DCF6E7218224DAD008FD568 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCF6E7018224DAD008FD568 /* ViewController.xib */; };
-		9DE38C9F1822F2BD00C2B5D9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE38C9E1822F2BD00C2B5D9 /* SecondViewController.m */; };
+		9DF9E83718274DF80034A8CD /* AfterLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9E83618274DF80034A8CD /* AfterLogin.storyboard */; };
+		9DF9E84318282A220034A8CD /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9E83918282A220034A8CD /* ContactCell.m */; };
+		9DF9E84418282A220034A8CD /* CustomTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9E83B18282A220034A8CD /* CustomTableViewViewController.m */; };
+		9DF9E84518282A220034A8CD /* Potato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF9E83C18282A220034A8CD /* Potato.jpg */; };
+		9DF9E84618282A220034A8CD /* SkillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9E83E18282A220034A8CD /* SkillCell.m */; };
+		9DF9E84718282A220034A8CD /* SkillsEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9E84018282A220034A8CD /* SkillsEditController.m */; };
+		9DF9E84818282A220034A8CD /* SkillsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9E84218282A220034A8CD /* SkillsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,13 +66,9 @@
 		659410AB1353A25700826837 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		659410AD1353A25700826837 /* OAuthStarterKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAuthStarterKit-Prefix.pch"; sourceTree = "<group>"; };
 		659410AE1353A25700826837 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		659410B01353A25700826837 /* OAuthStarterKitAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthStarterKitAppDelegate.h; sourceTree = "<group>"; };
-		659410B11353A25700826837 /* OAuthStarterKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuthStarterKitAppDelegate.m; sourceTree = "<group>"; };
 		659410B41353A25700826837 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		659410BB1353A29200826837 /* READ_ME.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = READ_ME.txt; sourceTree = "<group>"; };
 		659410BD1353A36600826837 /* ProfileTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTabView.xib; sourceTree = "<group>"; };
-		659410BE1353A36600826837 /* ProfileTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTabView.m; sourceTree = "<group>"; };
-		659410BF1353A36600826837 /* ProfileTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTabView.h; sourceTree = "<group>"; };
 		659410C21353A39900826837 /* OAuthLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthLoginView.xib; sourceTree = "<group>"; };
 		659410C31353A39900826837 /* OAuthLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthLoginView.m; sourceTree = "<group>"; };
 		659410C41353A39900826837 /* OAuthLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthLoginView.h; sourceTree = "<group>"; };
@@ -117,6 +118,8 @@
 		659411141353AE6800826837 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		659411151353AE6800826837 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		659411161353AE6800826837 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		9D30FF951829A38A006EB8D3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9D30FF961829A38A006EB8D3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9D951F6A1817C0200010C060 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		9D951F6C1817C28E0010C060 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9D951F6E1817C3430010C060 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,8 +129,21 @@
 		9DCF6E6E18224DAD008FD568 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		9DCF6E6F18224DAD008FD568 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		9DCF6E7018224DAD008FD568 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		9DE38C9D1822F2BD00C2B5D9 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		9DE38C9E1822F2BD00C2B5D9 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		9DF9E83618274DF80034A8CD /* AfterLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AfterLogin.storyboard; sourceTree = "<group>"; };
+		9DF9E83818282A220034A8CD /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
+		9DF9E83918282A220034A8CD /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
+		9DF9E83A18282A220034A8CD /* CustomTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewViewController.h; sourceTree = "<group>"; };
+		9DF9E83B18282A220034A8CD /* CustomTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewViewController.m; sourceTree = "<group>"; };
+		9DF9E83C18282A220034A8CD /* Potato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Potato.jpg; sourceTree = "<group>"; };
+		9DF9E83D18282A220034A8CD /* SkillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillCell.h; sourceTree = "<group>"; };
+		9DF9E83E18282A220034A8CD /* SkillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillCell.m; sourceTree = "<group>"; };
+		9DF9E83F18282A220034A8CD /* SkillsEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsEditController.h; sourceTree = "<group>"; };
+		9DF9E84018282A220034A8CD /* SkillsEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsEditController.m; sourceTree = "<group>"; };
+		9DF9E84118282A220034A8CD /* SkillsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsView.h; sourceTree = "<group>"; };
+		9DF9E84218282A220034A8CD /* SkillsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsView.m; sourceTree = "<group>"; };
+		9DF9E8491828310F0034A8CD /* PickerVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerVIew.h; sourceTree = "<group>"; };
+		9DF9E84A1828310F0034A8CD /* PickerVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerVIew.m; sourceTree = "<group>"; };
+		9DF9E84D1828D8900034A8CD /* ProfileTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTabView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +197,6 @@
 				659411121353A63E00826837 /* OAuth */,
 				659410F51353A41600826837 /* Crytpo */,
 				659410FC1353A41600826837 /* Categories */,
-				659410B01353A25700826837 /* OAuthStarterKitAppDelegate.h */,
-				659410B11353A25700826837 /* OAuthStarterKitAppDelegate.m */,
 				659410B31353A25700826837 /* MainWindow.xib */,
 				659410A81353A25700826837 /* Supporting Files */,
 			);
@@ -235,19 +249,32 @@
 			isa = PBXGroup;
 			children = (
 				9D951F6E1817C3430010C060 /* AppDelegate.h */,
+				9DF9E83818282A220034A8CD /* ContactCell.h */,
+				9DF9E83A18282A220034A8CD /* CustomTableViewViewController.h */,
+				9D30FF951829A38A006EB8D3 /* MainViewController.h */,
 				659410C41353A39900826837 /* OAuthLoginView.h */,
-				659410BF1353A36600826837 /* ProfileTabView.h */,
-				9DE38C9D1822F2BD00C2B5D9 /* SecondViewController.h */,
+				9DF9E8491828310F0034A8CD /* PickerVIew.h */,
+				9DF9E83D18282A220034A8CD /* SkillCell.h */,
+				9DF9E83F18282A220034A8CD /* SkillsEditController.h */,
+				9DF9E84118282A220034A8CD /* SkillsView.h */,
 				9DCF6E6E18224DAD008FD568 /* StoryViewController.h */,
 				9D951F701817C3430010C060 /* ViewController.h */,
+				9DF9E83C18282A220034A8CD /* Potato.jpg */,
 				9D951F6F1817C3430010C060 /* AppDelegate.m */,
+				9DF9E83918282A220034A8CD /* ContactCell.m */,
+				9DF9E83B18282A220034A8CD /* CustomTableViewViewController.m */,
+				9D30FF961829A38A006EB8D3 /* MainViewController.m */,
 				659410C31353A39900826837 /* OAuthLoginView.m */,
-				659410BE1353A36600826837 /* ProfileTabView.m */,
-				9DE38C9E1822F2BD00C2B5D9 /* SecondViewController.m */,
+				9DF9E84A1828310F0034A8CD /* PickerVIew.m */,
+				9DF9E84D1828D8900034A8CD /* ProfileTabView.m */,
+				9DF9E83E18282A220034A8CD /* SkillCell.m */,
+				9DF9E84018282A220034A8CD /* SkillsEditController.m */,
+				9DF9E84218282A220034A8CD /* SkillsView.m */,
 				9DCF6E6F18224DAD008FD568 /* StoryViewController.m */,
 				9D951F711817C3430010C060 /* ViewController.m */,
 				659410E11353A39900826837 /* linkedInBluebutton-highlight.png */,
 				659410E01353A39900826837 /* linkedInBluebutton.png */,
+				9DF9E83618274DF80034A8CD /* AfterLogin.storyboard */,
 				9D951F6A1817C0200010C060 /* Storyboard.storyboard */,
 				659410C21353A39900826837 /* OAuthLoginView.xib */,
 				659410BD1353A36600826837 /* ProfileTabView.xib */,
@@ -363,6 +390,8 @@
 				659411171353AE6800826837 /* Icon-72.png in Resources */,
 				659411181353AE6800826837 /* Icon.png in Resources */,
 				659411191353AE6800826837 /* Icon@2x.png in Resources */,
+				9DF9E83718274DF80034A8CD /* AfterLogin.storyboard in Resources */,
+				9DF9E84518282A220034A8CD /* Potato.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,24 +403,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				659410AF1353A25700826837 /* main.m in Sources */,
-				659410B21353A25700826837 /* OAuthStarterKitAppDelegate.m in Sources */,
-				659410C11353A36600826837 /* ProfileTabView.m in Sources */,
 				659410E51353A39900826837 /* OAuthLoginView.m in Sources */,
 				659410E61353A39900826837 /* OATokenManager.m in Sources */,
 				659410E71353A39900826837 /* OAToken.m in Sources */,
 				659410E81353A39900826837 /* OAServiceTicket.m in Sources */,
 				659410E91353A39900826837 /* OARequestParameter.m in Sources */,
+				9DF9E84718282A220034A8CD /* SkillsEditController.m in Sources */,
 				659410EA1353A39900826837 /* OAProblem.m in Sources */,
+				9DF9E84618282A220034A8CD /* SkillCell.m in Sources */,
 				659410EB1353A39900826837 /* OAPlaintextSignatureProvider.m in Sources */,
 				659410EC1353A39900826837 /* OAMutableURLRequest.m in Sources */,
 				659410ED1353A39900826837 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				9DF9E84318282A220034A8CD /* ContactCell.m in Sources */,
 				659410EE1353A39900826837 /* OADataFetcher.m in Sources */,
 				659410EF1353A39900826837 /* OAConsumer.m in Sources */,
 				659410F01353A39900826837 /* OACall.m in Sources */,
 				659410F11353A39900826837 /* OAAttachment.m in Sources */,
 				659410F41353A39900826837 /* JSONKit.m in Sources */,
+				9DF9E84818282A220034A8CD /* SkillsView.m in Sources */,
+				9D30FF971829A38A006EB8D3 /* MainViewController.m in Sources */,
 				9DCF6E7118224DAD008FD568 /* StoryViewController.m in Sources */,
-				9DE38C9F1822F2BD00C2B5D9 /* SecondViewController.m in Sources */,
 				659411031353A41600826837 /* Base64Transcoder.c in Sources */,
 				659411041353A41600826837 /* hmac.c in Sources */,
 				659411051353A41600826837 /* sha1.c in Sources */,
@@ -399,6 +430,7 @@
 				659411061353A41600826837 /* NSMutableURLRequest+Parameters.m in Sources */,
 				659411071353A41600826837 /* NSString+URLEncoding.m in Sources */,
 				659411081353A41600826837 /* NSURL+Base.m in Sources */,
+				9DF9E84418282A220034A8CD /* CustomTableViewViewController.m in Sources */,
 				9D951F731817C3430010C060 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +460,7 @@
 		659410B61353A25700826837 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -445,6 +478,7 @@
 		659410B71353A25700826837 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = "";

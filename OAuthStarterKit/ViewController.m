@@ -11,21 +11,18 @@
 
 @implementation ViewController
 
-@synthesize profileTabView;
+//@synthesize profileTabView;
 
 -(IBAction)loginButton:(id)sender
 {
     [self performSegueWithIdentifier:@"oauthview" sender:self];
-
+   
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
- //   UIStoryboard *mainstoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-  //  UIViewController *nuggViewController =[mainstoryboard instantiateInitialViewController];
     
 
 }
@@ -41,8 +38,7 @@
 //                                             selector:@selector(loginViewDidFinish:)
 //                                                 name:@"loginViewDidFinish"
 //                                               object:profileTabView];
-    
- //   [self presentModalViewController:profileTabView animated:YES];
+
     
 
 

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "OAuthStarterKitAppDelegate.h"
-#import "ProfileTabView.h"
+#import "StoryViewController.h"
 
 
 
@@ -17,23 +17,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-//    
- //   ProfileTabView *profileViewController = [[ProfileTabView alloc] initWithNibName:nil bundle:nil];
-  // self.window.rootViewController = profileViewController;
+    //
+    //   ProfileTabView *profileViewController = [[ProfileTabView alloc] initWithNibName:nil bundle:nil];
+    //  self.window.rootViewController = profileViewController;
+   
+
+
    
  
+     
+       UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"AfterLogin" bundle:nil];
+       StoryViewController* myStoryBoardInitialViewController = [storyboard instantiateInitialViewController];
+    self.window.rootViewController = myStoryBoardInitialViewController;
     
-   
- 
-    //  [self dismissModalViewControllerAnimated:YES];
-    //   UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    //   UIViewController* myStoryBoardInitialViewController = [storyboard instantiateInitialViewController];
-    
-    //   [self.navigationController pushViewController:myStoryBoardInitialViewController animated:YES];
+      // [self.navigationController pushViewController:myStoryBoardInitialViewController animated:YES];
     // [self profileApiCall];
     // UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
     //  ProfileTabView * yourView = (ProfileTabView *)[storyboard instantiateViewControllerWithIdentifier:@"nuggID"];
-    //   [self.presentedViewController:yourView animated:YES completion:^{}];
+      // [self.presentedViewController:myStoryBoardInitialViewController animated:YES completion:^{}];
 
     
   [self.window makeKeyAndVisible];
