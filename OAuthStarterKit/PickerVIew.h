@@ -8,19 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "CreateProject.h"
 
 #define BELBIN 0
 
 @interface PickerVIew : UIViewController
 
-<UIPickerViewDataSource,UIPickerViewDelegate>{
-    
-    IBOutlet UIPickerView *BelbinPicker;
+<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>{
     
     NSMutableArray *arrayBelbin;
 }
-@property (retain, nonatomic) IBOutlet UITextField *textBox;
+
 @property (strong, nonatomic) IBOutlet UIView *pickerViewContainer;
+@property (strong, nonatomic) IBOutlet UITextField *leaderBRole;
+@property (strong, nonatomic) IBOutlet CreateProject *cp;
+@property (strong, nonatomic) IBOutlet UIPickerView *BelbinPicker;
+
 
 
 @end
