@@ -9,8 +9,8 @@
 #import "ProfileController.h"
 #import "AFNetworking.h"
 #import <MessageUI/MessageUI.h>
-
 extern int currentUserID;
+
 
 
 @implementation ProfileController
@@ -21,12 +21,19 @@ extern int currentUserID;
 @synthesize skill1RatingLabel = _skill1RatingLabel;
 @synthesize currID;
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - View lifecycle
 - (IBAction)sendEmail:(id)sender {
-   NSString *emailTitle = @" Hello from Nugget!";
+    NSString *emailTitle = @" Hello from Nugget!";
     NSString *messageBody = @"Content ";
     NSArray *toRecipients = [NSArray arrayWithObject:_emailLabel.text];
-
-
+    
+    
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;
     [mc setSubject:emailTitle];
@@ -35,40 +42,7 @@ extern int currentUserID;
     
     // Present mail view controller on screen
     [self presentViewController:mc animated:YES completion:NULL];
-
 }
-
-- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
-{
-    switch (result)
-    {
-        case MFMailComposeResultCancelled:
-            NSLog(@"Mail cancelled");
-            break;
-        case MFMailComposeResultSaved:
-            NSLog(@"Mail saved");
-            break;
-        case MFMailComposeResultSent:
-            NSLog(@"Mail sent");
-            break;
-        case MFMailComposeResultFailed:
-            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
-            break;
-        default:
-            break;
-    }
-    
-    // Close the Mail Interface
-    [self dismissViewControllerAnimated:YES completion:NULL];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
 
 -(IBAction)Returnkey:(id)sender
 {
@@ -129,29 +103,29 @@ extern int currentUserID;
              NSArray *jsonDict = (NSArray *) responseObject;
              NSString *skills;
              skills = [[NSString alloc]init];
-            NSString *newLine = @"\n";
-            
+             NSString *newLine = @"\n";
+             
              for (int x = 0; x < [jsonDict count]; x++)
              {
                  NSDictionary *dictzero = [jsonDict objectAtIndex:x];
-            
-                     skills = [skills stringByAppendingString:[NSString stringWithFormat:@"%@", [dictzero objectForKey:@"Expertise_Name"]]];
+                 
+                 skills = [skills stringByAppendingString:[NSString stringWithFormat:@"%@", [dictzero objectForKey:@"Expertise_Name"]]];
                  skills = [skills stringByAppendingString:@", "];
-                     
-               //  }
+                 
+                 //  }
              }
-              
              
-          /*   for (int i = 0; i < [jsonDict count]; i++)
-             {
-                 NSDictionary *dictzero = [jsonDict objectAtIndex:i];
-                 skills = [skills stringByAppendingString:[NSString  stringWithFormat:@"%@",[dictzero objectForKey:@"Expertise_rating"]]];
-             } */
-            // skills = [skills stringByReplacingOccurrencesOfString:@"\\n" withString:newLine];
+             
+             /*   for (int i = 0; i < [jsonDict count]; i++)
+              {
+              NSDictionary *dictzero = [jsonDict objectAtIndex:i];
+              skills = [skills stringByAppendingString:[NSString  stringWithFormat:@"%@",[dictzero objectForKey:@"Expertise_rating"]]];
+              } */
+             // skills = [skills stringByReplacingOccurrencesOfString:@"\\n" withString:newLine];
              _skill1RatingLabel.text = skills;
-         
+             
          }
-     
+
      
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error Retrieving JSON" message:[NSString stringWithFormat:@"%@", error] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];

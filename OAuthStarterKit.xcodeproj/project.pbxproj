@@ -40,7 +40,6 @@
 		659410AF1353A25700826837 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410AE1353A25700826837 /* main.m */; };
 		659410B51353A25700826837 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659410B31353A25700826837 /* MainWindow.xib */; };
 		659410BC1353A29200826837 /* READ_ME.txt in Resources */ = {isa = PBXBuildFile; fileRef = 659410BB1353A29200826837 /* READ_ME.txt */; };
-		659410C01353A36600826837 /* ProfileTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659410BD1353A36600826837 /* ProfileTabView.xib */; };
 		659410E41353A39900826837 /* OAuthLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659410C21353A39900826837 /* OAuthLoginView.xib */; };
 		659410E51353A39900826837 /* OAuthLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410C31353A39900826837 /* OAuthLoginView.m */; };
 		659410E61353A39900826837 /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410C61353A39900826837 /* OATokenManager.m */; };
@@ -65,15 +64,15 @@
 		659411071353A41600826837 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 659411001353A41600826837 /* NSString+URLEncoding.m */; };
 		659411081353A41600826837 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 659411021353A41600826837 /* NSURL+Base.m */; };
 		9D30FF971829A38A006EB8D3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D30FF961829A38A006EB8D3 /* MainViewController.m */; };
-		9D951F6B1817C0200010C060 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D951F6A1817C0200010C060 /* Storyboard.storyboard */; };
+		9D68FE6718624E320023363D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D68FE6618624E320023363D /* Images.xcassets */; };
+		9D68FE6918624EDE0023363D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D68FE6818624EDE0023363D /* Icon.png */; };
+		9D68FE6B186253860023363D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D68FE6A186253860023363D /* MessageUI.framework */; };
+		9D68FE6D186254CA0023363D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D68FE6C186254CA0023363D /* Storyboard.storyboard */; };
 		9D951F6D1817C28E0010C060 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D951F6C1817C28E0010C060 /* Default-568h@2x.png */; };
 		9D951F721817C3430010C060 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D951F6F1817C3430010C060 /* AppDelegate.m */; };
 		9D951F731817C3430010C060 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D951F711817C3430010C060 /* ViewController.m */; };
 		9DCF6E7118224DAD008FD568 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF6E6F18224DAD008FD568 /* StoryViewController.m */; };
 		9DCF6E7218224DAD008FD568 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCF6E7018224DAD008FD568 /* ViewController.xib */; };
-		9DFC1E81185CA12700A64774 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFC1E80185CA12700A64774 /* MessageUI.framework */; };
-		9DFC1E85185CA99C00A64774 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFC1E84185CA99C00A64774 /* Images.xcassets */; };
-		9DFC1E87185CAC7700A64774 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DFC1E86185CAC7700A64774 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,7 +137,6 @@
 		659410AE1353A25700826837 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		659410B41353A25700826837 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		659410BB1353A29200826837 /* READ_ME.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = READ_ME.txt; sourceTree = "<group>"; };
-		659410BD1353A36600826837 /* ProfileTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTabView.xib; sourceTree = "<group>"; };
 		659410C21353A39900826837 /* OAuthLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthLoginView.xib; sourceTree = "<group>"; };
 		659410C31353A39900826837 /* OAuthLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthLoginView.m; sourceTree = "<group>"; };
 		659410C41353A39900826837 /* OAuthLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthLoginView.h; sourceTree = "<group>"; };
@@ -187,7 +185,10 @@
 		659411021353A41600826837 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
 		9D30FF951829A38A006EB8D3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9D30FF961829A38A006EB8D3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		9D951F6A1817C0200010C060 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		9D68FE6618624E320023363D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9D68FE6818624EDE0023363D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		9D68FE6A186253860023363D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9D68FE6C186254CA0023363D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		9D951F6C1817C28E0010C060 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9D951F6E1817C3430010C060 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D951F6F1817C3430010C060 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -197,9 +198,6 @@
 		9DCF6E6F18224DAD008FD568 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		9DCF6E7018224DAD008FD568 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		9DF9E84D1828D8900034A8CD /* ProfileTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTabView.m; sourceTree = "<group>"; };
-		9DFC1E80185CA12700A64774 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		9DFC1E84185CA99C00A64774 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9DFC1E86185CAC7700A64774 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DFC1E81185CA12700A64774 /* MessageUI.framework in Frameworks */,
+				9D68FE6B186253860023363D /* MessageUI.framework in Frameworks */,
 				426368DC1839BB5400D13698 /* MobileCoreServices.framework in Frameworks */,
 				426368DA1839BB4B00D13698 /* SystemConfiguration.framework in Frameworks */,
 				426368D81839BB3D00D13698 /* CoreLocation.framework in Frameworks */,
@@ -269,7 +267,7 @@
 		659410A01353A25700826837 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9DFC1E80185CA12700A64774 /* MessageUI.framework */,
+				9D68FE6A186253860023363D /* MessageUI.framework */,
 				426368DB1839BB5400D13698 /* MobileCoreServices.framework */,
 				426368D91839BB4B00D13698 /* SystemConfiguration.framework */,
 				426368D71839BB3D00D13698 /* CoreLocation.framework */,
@@ -294,7 +292,7 @@
 				659410F51353A41600826837 /* Crytpo */,
 				659410FC1353A41600826837 /* Categories */,
 				659410B31353A25700826837 /* MainWindow.xib */,
-				9DFC1E84185CA99C00A64774 /* Images.xcassets */,
+				9D68FE6618624E320023363D /* Images.xcassets */,
 				659410A81353A25700826837 /* Supporting Files */,
 			);
 			path = OAuthStarterKit;
@@ -303,7 +301,7 @@
 		659410A81353A25700826837 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9DFC1E86185CAC7700A64774 /* Icon.png */,
+				9D68FE6818624EDE0023363D /* Icon.png */,
 				659410A91353A25700826837 /* OAuthStarterKit-Info.plist */,
 				659410AA1353A25700826837 /* InfoPlist.strings */,
 				659410AD1353A25700826837 /* OAuthStarterKit-Prefix.pch */,
@@ -343,6 +341,7 @@
 		659411111353A61B00826837 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D68FE6C186254CA0023363D /* Storyboard.storyboard */,
 				42A2B9D8183C91CA00CA02DB /* CreateProject.h */,
 				42A2B9D9183C91CA00CA02DB /* CreateProject.m */,
 				42A2B9DA183C91CA00CA02DB /* Potato.jpg */,
@@ -381,9 +380,7 @@
 				9D951F711817C3430010C060 /* ViewController.m */,
 				659410E11353A39900826837 /* linkedInBluebutton-highlight.png */,
 				659410E01353A39900826837 /* linkedInBluebutton.png */,
-				9D951F6A1817C0200010C060 /* Storyboard.storyboard */,
 				659410C21353A39900826837 /* OAuthLoginView.xib */,
-				659410BD1353A36600826837 /* ProfileTabView.xib */,
 				9DCF6E7018224DAD008FD568 /* ViewController.xib */,
 			);
 			name = Views;
@@ -485,17 +482,16 @@
 			files = (
 				659410AC1353A25700826837 /* InfoPlist.strings in Resources */,
 				9DCF6E7218224DAD008FD568 /* ViewController.xib in Resources */,
-				9D951F6B1817C0200010C060 /* Storyboard.storyboard in Resources */,
+				9D68FE6718624E320023363D /* Images.xcassets in Resources */,
 				659410B51353A25700826837 /* MainWindow.xib in Resources */,
 				659410BC1353A29200826837 /* READ_ME.txt in Resources */,
-				659410C01353A36600826837 /* ProfileTabView.xib in Resources */,
 				426369A4183AEC1700D13698 /* AfterLogin.storyboard in Resources */,
 				9D951F6D1817C28E0010C060 /* Default-568h@2x.png in Resources */,
 				659410E41353A39900826837 /* OAuthLoginView.xib in Resources */,
-				9DFC1E85185CA99C00A64774 /* Images.xcassets in Resources */,
 				659410F21353A39900826837 /* linkedInBluebutton.png in Resources */,
+				9D68FE6D186254CA0023363D /* Storyboard.storyboard in Resources */,
 				659410F31353A39900826837 /* linkedInBluebutton-highlight.png in Resources */,
-				9DFC1E87185CAC7700A64774 /* Icon.png in Resources */,
+				9D68FE6918624EDE0023363D /* Icon.png in Resources */,
 				42A2B9DD183C91CA00CA02DB /* Potato.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +612,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -634,6 +631,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OAuthStarterKit/OAuthStarterKit-Prefix.pch";

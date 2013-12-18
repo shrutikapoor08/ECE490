@@ -101,7 +101,7 @@
          }];
     
     
-    [manager GET:[NSString stringWithFormat:@"http://localhost:8888/gettopskill.php?format=json"]
+    [manager GET:[NSString stringWithFormat:@"http://localhost:8888/getskills.php?format=json"]
       parameters:parameters
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              NSArray *jsonDict = (NSArray *) responseObject;
@@ -110,15 +110,18 @@
              for (int x = 0; x < [jsonDict count]; x++)
              {
                  NSDictionary *dictzero = [jsonDict objectAtIndex:x];
-                 if (x == 3) break;
-                 else
+                 for (int i = 0; i < [_expertises count]; i++)
                  {
-                     if (x>0)
+                     if ([[dictzero objectForKey:@"Expertise_Name"]isEqualToString: _expertises[i]])
                      {
-                         skills = [skills stringByAppendingString:@", "];
+                         if (![skills isEqualToString:@""])
+                             {
+                                 skills = [skills stringByAppendingString:@", "];
+                             }
+                             skills = [skills stringByAppendingString:[NSString stringWithFormat:@"%@", [dictzero objectForKey:@"Expertise_Name"]]];
+                             
                      }
-                     skills = [skills stringByAppendingString:[NSString stringWithFormat:@"%@", [dictzero objectForKey:@"Expertise_Name"]]];
-                     
+
                  }
              }
              cell.skillLabel.text = skills; 

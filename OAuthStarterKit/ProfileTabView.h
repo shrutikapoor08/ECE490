@@ -1,11 +1,3 @@
-//
-//  iPhone OAuth Starter Kit
-//
-//  Supported providers: LinkedIn (OAuth 1.0a)
-//
-//  Lee Whitney
-//  http://whitneyland.com
-//
 
 #import <UIKit/UIKit.h>
 #import "OAuthLoginView.h"

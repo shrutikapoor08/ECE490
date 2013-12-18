@@ -121,6 +121,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"prepareforSegue");
+    
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:_cp.expertises.text, @"Expertises", _cp.psize.text, @"Team_size",_cp.leaderrole.text , @"Belbin_role", nil];
     
     for (id key in [parameters allKeys]){
@@ -138,6 +139,7 @@
              
              if ([segue.identifier isEqualToString:@"getTeam"]) {
                  TeamController *vc = [segue destinationViewController];
+                 vc.expertises = [_cp.expertises.text componentsSeparatedByString:@";"];
                  vc.team = [[NSMutableArray alloc] init];
                  NSArray *jsonDict = (NSArray *) responseObject;
                  for (int i = 0; i < [jsonDict count]; i++)

@@ -13,5 +13,6 @@
     IBOutlet UITableView *teamMembersView;
 }
 @property (nonatomic, strong) NSMutableArray *team;
+@property (nonatomic, strong) NSArray *expertises;
 
 @end
